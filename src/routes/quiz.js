@@ -5,7 +5,7 @@ const  con  = require('../database/index')
 let consql = mysql.createConnection(con);
 
 router.get('/',async(req,res) =>{
-    const sql = "SELECT * FROM textmemory"
+    const sql = "SELECT * FROM quiz ORDER BY RAND() LIMIT 10"
     consql.query(sql,(error, results, fields) => {
         if (error) {
           return console.error(error.message);

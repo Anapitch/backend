@@ -6,7 +6,7 @@ const thing = require('./thing')
 const activity = require('./activity')
 const sentence = require('./sentence')
 const memory = require('./memory')
-const textmemory = require('./textmemory')
+const quiz = require('./quiz')
 
 const router = express.Router()
 router.use('/animal',animal)
@@ -16,6 +16,6 @@ router.use('/thing',thing)
 router.use('/activity',activity)
 router.use('/sentence',sentence)
 router.use('/memory',memory)
-router.use('/textmemory',textmemory)
+router.use('/quiz',quiz)
 
 module.exports = router
