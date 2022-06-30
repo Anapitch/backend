@@ -2,9 +2,9 @@ const mysql = require('mysql');
 
 //create connection
 const con = {
-  host: "127.0.0.1",
-  user: "root",
-  password: "",
+  host: "128.199.125.174",
+  user: "sqluser",
+  password: "password",
   database: "newapp"
 };
 
